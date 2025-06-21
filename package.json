@@ -1,7 +1,8 @@
 {
   "scripts": {
-  "start": "node server.js"
-},
+    "start": "node src/Server.js"
+  },
+
 
   "dependencies": {
     "bcrypt": "^6.0.0",
