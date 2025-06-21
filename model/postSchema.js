@@ -22,7 +22,7 @@ contentType: {
   },
   section: {
     type: String,
-    enum: ['automotive', 'product', 'portraits'],
+    enum: ['automotive', 'product', 'portraits','fashion','travel'],
     required: true
   }
 });
