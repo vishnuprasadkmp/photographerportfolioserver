@@ -13,24 +13,11 @@ const PORT = process.env.PORT || 5000;
 // DB Connection
 connectDb();
 
-const allowedOrigins = [
-  'http://localhost:5173',
-  'https://photographerportfolio-eosin.vercel.app'
-];
-
 app.use(cors({
-  origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps, curl, Postman)
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  origin: true, // Automatically reflect request origin
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
-
 
 // JSON parsing
 app.use(express.json());
