@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+*.lock.json
+# dotenv environment variables
+.env
+
+# log files
+*.log
+
+# IDE files
+.vscode/
+.DS_Store
+
+# production
+dist/
+build/
+public/images/
