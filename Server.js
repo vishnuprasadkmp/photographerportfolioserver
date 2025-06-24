@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 connectDb();
 
 app.use(cors({
-  origin: true, // Automatically reflect request origin
+  origin: ['http://localhost:5173', 'https://photographerportfolio-vij5.onrender.com'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
